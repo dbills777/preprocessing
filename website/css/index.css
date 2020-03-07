@@ -241,11 +241,25 @@ a {
 }
 .hero {
   height: 90vh;
-  background-color: #c59d8f;
+  background-color: #3ab0c5;
 }
 .hero > h1 {
   font-size: 4rem;
-  color: #dddead;
+  color: #f1f1f1;
+}
+.custom-button {
+  background-color: green;
+  color: white;
+  border: 1px solid black;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+.custom2 {
+  background-color: green;
+  color: white;
+  border: 1px solid black;
+  padding: 5px 20px;
+  border-radius: 20px;
 }
 .small-articles h1 {
   color: #ebcc1a;
