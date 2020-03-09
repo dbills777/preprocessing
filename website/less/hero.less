@@ -1,9 +1,17 @@
 .hero {
   height: 90vh;
-  background-color: rgb(58, 176, 197);
+  background-color: @backgroundColor;
+  background-image: url("../images/hero.jpg");
   > h1 {
     font-size: 4rem;
-    color: rgb(241, 241, 241);
+    padding-top: 5rem;
+    color: @primaryColor;
+    text-align: center;
+    font-family: @mainFont;
+  }
+  h2 {
+    text-align: center;
+    padding-top: 5rem;
   }
 }
 .custom-button {
@@ -13,6 +21,9 @@
   padding: 5px 20px;
   border-radius: 20px;
 }
-.custom2{
-  .custom-button()
+.custom2 {
+  .custom-button();
+}
+.section {
+  background-image: url("../images/hero.jpg");
 }

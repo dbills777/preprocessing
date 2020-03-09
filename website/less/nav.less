@@ -1,7 +1,5 @@
 // PURE CSS NAVIGATION
-a {
-  color: rgb(97, 97, 97);
-}
+
 
 /* header */
 
@@ -10,13 +8,17 @@ a {
   width: 100%;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  a {
+    color:@navLinkColor;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
   ul {
     overflow: hidden;
   }
   li a {
     display: block;
     padding: 20px 20px;
-    //   border-right: 1px solid #f4f4f4;
     text-decoration: none;
   }
   .menu {
@@ -106,9 +108,11 @@ a {
   top: 0;
 }
 
-/* 48em = 768px */
 
-@media (min-width: 600px) {
+// !CREATE EXCAPED VARIABLE FOR MEDIA QUERY
+@phone: ~"(min-width: 600px)";
+// !USE @MEDIA TO APPLY MEDIA QUERY
+@media @phone{
   .header {
     grid-template-columns: 1fr 2fr;
     ul {
@@ -126,3 +130,24 @@ a {
     }
   }
 }
+// ORIGINAL MEDIA QUERY DONE WITHOUT ESCAPED VARIABLE
+/* 48em = 768px */
+
+// @media (min-width: 600px) {
+//   .header {
+//     grid-template-columns: 1fr 2fr;
+//     ul {
+//       display: grid;
+//       grid-template-columns: repeat(4, 1fr);
+//     }
+//     li a {
+//       padding: 20px 30px;
+//     }
+//     .menu {
+//       max-height: none;
+//     }
+//     .menu-icon {
+//       display: none;
+//     }
+//   }
+// }
