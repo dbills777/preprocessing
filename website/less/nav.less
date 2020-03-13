@@ -1,6 +1,5 @@
 // PURE CSS NAVIGATION
 
-
 /* header */
 
 .header {
@@ -9,7 +8,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   a {
-    color:@navLinkColor;
+    color: @navLinkColor;
     font-weight: 500;
     text-transform: uppercase;
   }
@@ -108,11 +107,7 @@
   top: 0;
 }
 
-
-// !CREATE EXCAPED VARIABLE FOR MEDIA QUERY
-@phone: ~"(min-width: 600px)";
-// !USE @MEDIA TO APPLY MEDIA QUERY
-@media @phone{
+@media @wide {
   .header {
     grid-template-columns: 1fr 2fr;
     ul {

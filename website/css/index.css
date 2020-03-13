@@ -2,6 +2,11 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+.hero-info h1 {
+  font-size: 5rem;
+  color: #5051db;
+  font-family: "Poppins", sans-serif;
+}
 /* header */
 .header {
   background-color: #fff;
@@ -109,16 +114,12 @@
 }
 /* 48em = 768px */
 .hero {
-  height: 90vh;
+  height: 80vh;
   background-color: #e6e6e6;
   background-image: url("../images/hero.jpg");
-}
-.hero > h1 {
-  font-size: 4rem;
-  padding-top: 5rem;
-  color: #5051db;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero h2 {
   text-align: center;
@@ -138,8 +139,24 @@
   padding: 5px 20px;
   border-radius: 20px;
 }
-.section {
-  background-image: url("../images/hero.jpg");
+.sub-content {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  font-size: 3rem;
+  gap: 2rem;
+  padding: 4rem;
+}
+.sub-content h1 {
+  font-size: 5rem;
+  color: #5051db;
+  font-family: "Poppins", sans-serif;
+}
+@media (min-width: 600px) {
+  .sub-content {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .small-articles h1 {
   color: #ebcc1a;
