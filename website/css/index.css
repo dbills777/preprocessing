@@ -140,7 +140,6 @@
   border-radius: 20px;
 }
 .sub-content {
-  text-align: center;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -160,6 +159,16 @@
 }
 .small-articles h1 {
   color: #ebcc1a;
+}
+.article-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+.article-sections h1 {
+  font-size: 5rem;
+  color: #5051db;
+  font-family: "Poppins", sans-serif;
 }
 html,
 body,
@@ -299,4 +308,3 @@ body {
   font-family: "Poppins", sans-serif;
   font-style: italic;
 }
-/*# sourceMappingURL=index.css.map */
