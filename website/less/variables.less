@@ -1,4 +1,5 @@
-// FONTS
+// Variables for font stacks and colors
+//Fonts
 @mainFont: "Poppins", sans-serif;
 @italic: italic;
 @mainFontSize: 2rem;
@@ -7,12 +8,33 @@
 @navLinkColor: rgb(63, 63, 63);
 @backgroundColor: rgb(230, 230, 230);
 // MIXINS
+// MIXIN FOR HERO INFO H1
 .hero-info {
   h1 {
     font-size: 5rem;
     color: @primaryColor;
     font-family: @mainFont;
+    margin-left: 3rem;
   }
+}
+.book-btn {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  font-size: 2rem;
+  padding-top: 2rem;
+  border: none;
+  transition: color 0.175s ease-in;
+  color: @primaryColor;
+  &:hover {
+    color: @primaryColor;
+    border-bottom: 1px solid @primaryColor;
+  }
+}
+
+//MIXIN FOR BACKGROUND COLOR OF EACH ARTICLE SECTION
+.article-sections:nth-child(odd) {
+  background-color: rgb(235, 235, 235);
 }
 // VARIABLES
 // !CREATE ESCAPED VARIABLE FOR MEDIA QUERY
