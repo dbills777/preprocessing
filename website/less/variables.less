@@ -3,10 +3,11 @@
 @mainFont: "Poppins", sans-serif;
 @italic: italic;
 @mainFontSize: 2rem;
+@fontColor: rgb(77, 77, 77);
 // COLORS
 @primaryColor: #5051db;
 @navLinkColor: rgb(63, 63, 63);
-@backgroundColor: rgb(230, 230, 230);
+@backgroundColor: rgb(237, 237, 237);
 // MIXINS
 // MIXIN FOR HERO INFO H1
 .hero-info {
@@ -14,8 +15,12 @@
     font-size: 5rem;
     color: @primaryColor;
     font-family: @mainFont;
-    margin-left: 3rem;
   }
+}
+// MIXIN FOR H2 FOR SECTIONS
+.h2-style {
+  font-weight: 300;
+  color: @fontColor;
 }
 .book-btn {
   cursor: pointer;
@@ -34,7 +39,17 @@
 
 //MIXIN FOR BACKGROUND COLOR OF EACH ARTICLE SECTION
 .article-sections:nth-child(odd) {
-  background-color: rgb(235, 235, 235);
+  background-color: @backgroundColor;
+  // this moves every other div containing the content to the left leaving
+  // the HTML uniform
+  div{
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 2rem;
+  }
+  h1{
+    color: @fontColor;
+  }
 }
 // VARIABLES
 // !CREATE ESCAPED VARIABLE FOR MEDIA QUERY

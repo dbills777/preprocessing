@@ -1,18 +1,25 @@
 .small-articles {
-  h1 {
-    color: rgb(235, 204, 26);
+
+  h2{
+    .h2-style()
   }
 }
 .article-sections {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-items: center;
-  padding: 2rem;
+  padding: 3rem 3rem;
   .hero-info();
+  h1{
+    color: @fontColor;
+    margin-bottom: 2rem;
+  }
 }
 figure {
   width: 70%;
-
+  img{
+    width: 100%;
+  }
   figcaption {
     font-size: 1rem;
     font-weight: 300;
@@ -20,6 +27,7 @@ figure {
     padding-left: 1rem;
   }
 }
+
 @media @wide {
   .sub-content {
     // text-align: center;
