@@ -396,6 +396,9 @@ form input {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+.series {
+  background-color: grey;
+}
 html,
 body,
 div,
