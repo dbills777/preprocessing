@@ -1,0 +1,58 @@
+.blog-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.blogs{
+    display: grid;
+    grid-auto-rows: auto;
+    background-color: @backgroundColor;
+    div{
+        justify-self: center;
+    }
+    .blog-image{
+        justify-self: center;
+        max-width: 40rem;
+    }
+    h1{
+        font-size: 3rem;
+        margin: 1rem 2rem;
+        text-align: center;
+
+    }
+    h4{
+        margin: 2rem;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+
+@media @wide{
+    .blog-container{
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+   text-align: center;
+   .blogs:nth-child(2){
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    img{
+        padding-left: 1rem;
+    }
+
+}
+}
+.blogs{
+    h1{
+        text-align: left;
+    }
+    h4{
+        text-align: left;
+    }
+}
+}

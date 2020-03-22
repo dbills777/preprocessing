@@ -1,0 +1,52 @@
+.form-container {
+  background-color: @primaryColor;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 4rem;
+
+}
+.form {
+  color: white;
+}
+label {
+  color: white;
+}
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  height: 4rem;
+}
+form {
+  justify-self: center;
+  button {
+    .form-button();
+  }
+  input {
+    width: 40rem;
+  }
+}
+::placeholder {
+  color: white;
+  font-size: @mainFontSize;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+.form {
+  h1 {
+    font-size: 3rem;
+    margin: 3rem;
+  }
+  h3{
+      margin: 3rem;
+  }
+}
+
+@media @wide {
+  .form-container {
+    grid-template-columns: 1fr 1fr;
+    justify-self: left;
+    padding-bottom: 10rem;
+  }
+ 
+}

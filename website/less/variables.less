@@ -5,9 +5,16 @@
 @mainFontSize: 2rem;
 @fontColor: rgb(77, 77, 77);
 // COLORS
-@primaryColor: #5051db;
+@primaryColor: #5051DB;
 @navLinkColor: rgb(63, 63, 63);
 @backgroundColor: rgb(237, 237, 237);
+//Constraints
+.article-sections{
+  max-width: 100%;
+  margin: 10rem auto;
+  
+  
+}
 // MIXINS
 // MIXIN FOR HERO INFO H1
 .hero-info {
@@ -36,6 +43,14 @@
     border-bottom: 1px solid @primaryColor;
   }
 }
+// MIXIN FOR FORM BUTTON STYLES HERE.
+.form-button{
+  background-color: transparent;
+  border: 1px solid white;
+  color: rgb(255, 255, 255);
+  padding: 1.5rem;
+  
+}
 
 //MIXIN FOR BACKGROUND COLOR OF EACH ARTICLE SECTION
 .article-sections:nth-child(odd) {
@@ -47,6 +62,7 @@
     grid-row: 1;
     margin-left: 2rem;
   }
+  
   h1{
     color: @fontColor;
   }

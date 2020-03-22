@@ -1,11 +1,12 @@
 .hero {
-  height: 80vh;
-  background-color: @backgroundColor;
+  height: 70vh;
+  width: 90vw;
   background-image: url("../images/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  
+  // background-size: contain;
+  margin: auto;
 }
 .custom-button {
   background-color: green;
@@ -19,6 +20,7 @@
 }
 
 .sub-content {
+  max-width: 90vw;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -27,13 +29,14 @@
   padding: 4rem;
   // margin: 2rem;
   .hero-info();
-  h2{
-    .h2-style()
+  h2 {
+    .h2-style();
   }
 }
 
 @media @wide {
   .sub-content {
     grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
   }
 }

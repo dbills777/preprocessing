@@ -2,9 +2,13 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+.article-sections {
+  max-width: 100%;
+  margin: 10rem auto;
+}
 .hero-info h1 {
   font-size: 5rem;
-  color: #5051db;
+  color: #5051DB;
   font-family: "Poppins", sans-serif;
 }
 .h2-style {
@@ -19,11 +23,17 @@
   padding-top: 2rem;
   border: none;
   transition: color 0.175s ease-in;
-  color: #5051db;
+  color: #5051DB;
 }
 .book-btn:hover {
-  color: #5051db;
-  border-bottom: 1px solid #5051db;
+  color: #5051DB;
+  border-bottom: 1px solid #5051DB;
+}
+.form-button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: #ffffff;
+  padding: 1.5rem;
 }
 .article-sections:nth-child(odd) {
   background-color: #ededed;
@@ -55,6 +65,9 @@
   display: block;
   padding: 20px 20px;
   text-decoration: none;
+}
+.header a span {
+  color: #ff006a;
 }
 .header .menu {
   max-height: 0;
@@ -143,12 +156,13 @@
 }
 /* 48em = 768px */
 .hero {
-  height: 80vh;
-  background-color: #ededed;
+  height: 70vh;
+  width: 90vw;
   background-image: url("../images/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin: auto;
 }
 .custom-button {
   background-color: green;
@@ -165,6 +179,7 @@
   border-radius: 20px;
 }
 .sub-content {
+  max-width: 90vw;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -174,7 +189,7 @@
 }
 .sub-content h1 {
   font-size: 5rem;
-  color: #5051db;
+  color: #5051DB;
   font-family: "Poppins", sans-serif;
 }
 .sub-content h2 {
@@ -184,7 +199,13 @@
 @media (min-width: 600px) {
   .sub-content {
     grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
   }
+}
+.icons {
+  height: 5rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
 }
 .small-articles h2 {
   font-weight: 300;
@@ -192,13 +213,13 @@
 }
 .article-sections {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-items: center;
   padding: 3rem 3rem;
 }
 .article-sections h1 {
   font-size: 5rem;
-  color: #5051db;
+  color: #5051DB;
   font-family: "Poppins", sans-serif;
 }
 .article-sections h1 {
@@ -214,7 +235,7 @@ figure img {
 figure figcaption {
   font-size: 1rem;
   font-weight: 300;
-  border-left: 1px solid #5051db;
+  border-left: 1px solid #5051DB;
   padding-left: 1rem;
 }
 @media (min-width: 600px) {
@@ -227,6 +248,7 @@ figure figcaption {
   }
 }
 .story-content {
+  max-width: 90vw;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -234,10 +256,11 @@ figure figcaption {
   gap: 2rem;
   padding: 4rem;
   text-align: center;
+  margin: 0 auto;
 }
 .story-content h1 {
   font-size: 5rem;
-  color: #5051db;
+  color: #5051DB;
   font-family: "Poppins", sans-serif;
 }
 .story-content h2 {
@@ -247,6 +270,131 @@ figure figcaption {
 .story-btn {
   width: 50%;
   text-align: left;
+}
+.story-subheading {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.story-subheading h1 {
+  margin: 2rem;
+}
+@media (min-width: 600px) {
+  .story-subheading {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.form-container {
+  background-color: #5051DB;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 4rem;
+}
+.form {
+  color: white;
+}
+label {
+  color: white;
+}
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  height: 4rem;
+}
+form {
+  justify-self: center;
+}
+form button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: #ffffff;
+  padding: 1.5rem;
+}
+form input {
+  width: 40rem;
+}
+::placeholder {
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+.form h1 {
+  font-size: 3rem;
+  margin: 3rem;
+}
+.form h3 {
+  margin: 3rem;
+}
+@media (min-width: 600px) {
+  .form-container {
+    grid-template-columns: 1fr 1fr;
+    justify-self: left;
+    padding-bottom: 10rem;
+  }
+}
+.blog-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+.blogs {
+  display: grid;
+  grid-auto-rows: auto;
+  background-color: #ededed;
+}
+.blogs div {
+  justify-self: center;
+}
+.blogs .blog-image {
+  justify-self: center;
+  max-width: 40rem;
+}
+.blogs h1 {
+  font-size: 3rem;
+  margin: 1rem 2rem;
+  text-align: center;
+}
+.blogs h4 {
+  margin: 2rem;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .blog-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+  .blog-container .blogs:nth-child(2) {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+  }
+  .blog-container .blogs:nth-child(2) img {
+    padding-left: 1rem;
+  }
+  .blogs h1 {
+    text-align: left;
+  }
+  .blogs h4 {
+    text-align: left;
+  }
+}
+.footer-content {
+  display: grid;
+  grid-auto-columns: auto;
+  justify-content: center;
+  padding-bottom: 2rem;
+  background-color: #5051DB;
+}
+.footer-content p {
+  margin: 5rem;
+  color: white;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 html,
 body,
