@@ -7,7 +7,6 @@
 .blogs{
     display: grid;
     grid-auto-rows: auto;
-    background-color: @backgroundColor;
     div{
         justify-self: center;
     }
@@ -28,16 +27,27 @@
 
 }
 
-
-
-
-
+.blogs{
+        margin: 10rem 0 10rem 0;
+    h1{
+        font-family: 'Times New Roman', Times, serif;
+        text-align: left;
+    }
+    h4{
+        letter-spacing: 3px;
+        text-align: left;
+    }
+}
 
 @media @wide{
     .blog-container{
     grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-   text-align: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10rem;
+   img{
+       max-height: 40rem;
+   }
    .blogs:nth-child(2){
     border-left: 1px solid gray;
     border-right: 1px solid gray;
@@ -46,13 +56,5 @@
     }
 
 }
-}
-.blogs{
-    h1{
-        text-align: left;
-    }
-    h4{
-        text-align: left;
-    }
 }
 }
