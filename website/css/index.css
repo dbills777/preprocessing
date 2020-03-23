@@ -161,7 +161,7 @@
 /* 48em = 768px */
 .hero {
   height: 70vh;
-  width: 90vw;
+  width: 80vw;
   background-image: url("../images/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -183,7 +183,7 @@
   border-radius: 20px;
 }
 .sub-content {
-  max-width: 90vw;
+  max-width: 80vw;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -220,7 +220,7 @@
   grid-template-columns: 1fr;
   justify-items: center;
   padding: 3rem 3rem;
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
 }
 .article-sections h1 {
@@ -257,7 +257,7 @@ figure figcaption {
   }
 }
 .story-content {
-  max-width: 90vw;
+  max-width: 80vw;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
