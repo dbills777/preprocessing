@@ -21,19 +21,23 @@
   outline: none;
   font-size: 2rem;
   padding-top: 2rem;
+  margin-bottom: 1rem;
+  width: fit-content;
   border: none;
+  border-bottom: 1px solid lightgray;
   transition: color 0.175s ease-in;
   color: #5051DB;
 }
 .book-btn:hover {
   color: #5051DB;
-  border-bottom: 1px solid #5051DB;
+  border-bottom: 3px solid #5051DB;
 }
 .form-button {
   background-color: transparent;
   border: 1px solid white;
   color: #ffffff;
   padding: 1.5rem;
+  cursor: pointer;
 }
 .article-sections:nth-child(odd) {
   background-color: #ededed;
@@ -309,6 +313,7 @@ form button {
   border: 1px solid white;
   color: #ffffff;
   padding: 1.5rem;
+  cursor: pointer;
 }
 form input {
   width: 40rem;
@@ -397,7 +402,7 @@ form input {
   }
 }
 .series {
-  background-color: grey;
+  background-color: rgba(255, 255, 255, 0.139);
 }
 .hero2 {
   height: 70vh;
