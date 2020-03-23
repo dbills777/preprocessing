@@ -1,3 +1,49 @@
-.series{
-    background-color: grey;
+.series {
+  background-color: grey;
+}
+.hero2 {
+  height: 70vh;
+  width: 90vw;
+  background-image: url("../images/hero2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: fit;
+  margin: auto;
+}
+.events-container {
+  padding: 5rem;
+  background-color: white;
+}
+.events {
+  border: 1px solid @primaryColor;
+
+  padding: 5rem;
+  h1 {
+    font-size: 4rem;
+    margin: 3rem;
+  }
+  h3 {
+    font-size: 3rem;
+    margin: 3rem;
+  }
+}
+.tours {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  
+  h2 {
+    padding: 3rem;
+   
+  }
+}
+@media @wide {
+  .tours {
+    grid-template-columns: 1fr 1fr;
+    h2 {
+      padding: 5rem;
+    }
+   
+  }
 }
