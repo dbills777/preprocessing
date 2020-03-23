@@ -15,7 +15,7 @@ _Calm Mind_ - Spa
 You will use one of these companies as a guide for your content.  For design, you will need to find a website that you admire as a guide for layout.  You will then combine the company content and the layout of the website you admire to create a single page marketing site.
 
 
-## Preprossing Requirements
+## Preprocessed CSS Requirements
 
 These project requirements directly impact the grading rubric, so read them carefully:
 
