@@ -232,6 +232,9 @@
   color: #4d4d4d;
   margin-bottom: 2rem;
 }
+figure {
+  width: 70%;
+}
 figure img {
   width: 70%;
 }
@@ -240,6 +243,9 @@ figure figcaption {
   font-weight: 300;
   border-left: 1px solid #5051DB;
   padding-left: 1rem;
+}
+.story-image {
+  width: 100%;
 }
 @media (min-width: 600px) {
   .sub-content {
