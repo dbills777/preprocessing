@@ -264,6 +264,9 @@ figure figcaption {
   font-size: 3rem;
   padding: 4rem;
   grid-gap: 5rem;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
 }
 .story-content h1 {
   font-size: 5rem;
@@ -273,9 +276,6 @@ figure figcaption {
 .story-content h2 {
   font-weight: 300;
   color: #4d4d4d;
-}
-.story-content figure {
-  margin: 0 auto;
 }
 .story-btn {
   width: 50%;
@@ -290,9 +290,6 @@ figure figcaption {
 @media (min-width: 600px) {
   .story-subheading {
     grid-template-columns: 1fr 1fr;
-  }
-  figure .story-image {
-    margin-left: 15%;
   }
 }
 .form-container {
@@ -429,6 +426,7 @@ form input {
   background-position: center;
   background-size: fit;
   margin: auto;
+  margin-top: 2rem;
 }
 .events-container {
   padding: 5rem;
