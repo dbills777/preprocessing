@@ -277,6 +277,12 @@ figure figcaption {
   font-weight: 300;
   color: #4d4d4d;
 }
+.story-content h1 {
+  line-height: 7rem;
+}
+.story-content h2 {
+  line-height: 5rem;
+}
 .story-btn {
   width: 50%;
 }
@@ -416,6 +422,12 @@ form input {
 }
 .series {
   background-color: rgba(255, 255, 255, 0.139);
+}
+.sub-content h1 {
+  line-height: 7rem;
+}
+.sub-content h2 {
+  line-height: 5rem;
 }
 .hero2 {
   height: 70vh;
